@@ -1,0 +1,68 @@
+
+menu.cpu=Processor
+
+##############################################################
+#LoRA32u4 Configuration
+lora32u4.name=LoRa32u4 (433MHz)
+lora32u4.bootloader.low_fuses=0xff
+lora32u4.bootloader.high_fuses=0xd8
+lora32u4.bootloader.extended_fuses=0xcb
+lora32u4.bootloader.file=caterina/Caterina-Lora32u4.hex
+lora32u4.bootloader.unlock_bits=0x3F
+lora32u4.bootloader.lock_bits=0x2F
+lora32u4.bootloader.tool=arduino:avrdude
+
+lora32u4.build.mcu=atmega32u4
+lora32u4.build.f_cpu=8000000L
+lora32u4.build.vid=0x239A
+lora32u4.build.pid=0x800C
+lora32u4.build.core=arduino:arduino
+lora32u4.build.variant=lora32u4
+lora32u4.build.board=AVR_FEATHER32U4
+lora32u4.build.usb_product="Feather 32u4"
+lora32u4.build.usb_manufacturer="Adafruit"
+lora32u4.build.extra_flags={build.usb_flags}
+
+lora32u4.upload.protocol=avr109
+lora32u4.upload.maximum_size=28672
+lora32u4.upload.speed=57600
+lora32u4.upload.disable_flushing=true
+lora32u4.upload.use_1200bps_touch=true
+lora32u4.upload.wait_for_upload_port=true
+lora32u4.upload.tool=arduino:avrdude
+
+lora32u4.vid.0=0x239A
+lora32u4.pid.0=0x800C
+
+##############################################################
+#lora32u4II Configuration
+lora32u4II.name=LoRa32u4II (868-915MHz)
+lora32u4II.bootloader.low_fuses=0xff
+lora32u4II.bootloader.high_fuses=0xd8
+lora32u4II.bootloader.extended_fuses=0xcb
+lora32u4II.bootloader.file=caterina/Caterina-lora32u4II.hex
+lora32u4II.bootloader.unlock_bits=0x3F
+lora32u4II.bootloader.lock_bits=0x2F
+lora32u4II.bootloader.tool=arduino:avrdude
+
+lora32u4II.build.mcu=atmega32u4
+lora32u4II.build.f_cpu=8000000L
+lora32u4II.build.vid=0x239A
+lora32u4II.build.pid=0x800C
+lora32u4II.build.core=arduino:arduino
+lora32u4II.build.variant=lora32u4II
+lora32u4II.build.board=AVR_FEATHER32U4
+lora32u4II.build.usb_product="Feather 32u4"
+lora32u4II.build.usb_manufacturer="Adafruit"
+lora32u4II.build.extra_flags={build.usb_flags}
+
+lora32u4II.upload.protocol=avr109
+lora32u4II.upload.maximum_size=28672
+lora32u4II.upload.speed=57600
+lora32u4II.upload.disable_flushing=true
+lora32u4II.upload.use_1200bps_touch=true
+lora32u4II.upload.wait_for_upload_port=true
+lora32u4II.upload.tool=arduino:avrdude
+
+lora32u4II.vid.0=0x239A
+lora32u4II.pid.0=0x800C
