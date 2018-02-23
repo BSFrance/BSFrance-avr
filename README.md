@@ -1,6 +1,6 @@
 # BSFrance-avr
 
-This core is will allow you to use all BSFrance AVR based boards with the Arduino ecosystem.
+This core will allow you to use BSFrance AVR based boards with the Arduino ecosystem.
 
 # How to install
 
